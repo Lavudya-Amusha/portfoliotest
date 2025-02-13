@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav h1 {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.home-section {
+    background-color: #008080;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.home-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 1.5rem;
+}
+
+.about-section, .projects-section, .contact-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.project {
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    color: #008080;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #555;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 15px 30px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #006666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background: #6a1b9a;
+            color: white;
+            padding: 1em 0;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 2em 0;
+        }
+
+        .home-section {
+            background: linear-gradient(to right, #6a1b9a, #ab47bc);
+            color: white;
+            text-align: center;
+            padding: 5em 0;
+            position: relative;
+        }
+
+        .lady {
+            position: absolute;
+            top: 32%;
+            left: 0;
+            transform: translateY(-50%);
+            animation: float 10s infinite linear;
+        }
+
+        @keyframes float {
+            0% { left: 0; }
+            50% { left: 30%; }
+            100% { left: 0; }
+        }
+/* Increase the size of the contact section */
+.contact-section {
+    background: #f3f3f3;
+    text-align: center;
+    padding: 4em 0; /* Increased padding for more space */
+    font-size: 1.8em; /* Larger font size */
+    line-height: 1.8; /* Increase line height for better readability */
+}
+
+/* Form elements (input and textarea) */
+.contact-section input,
+.contact-section textarea {
+    font-size: 1.2em; /* Increase font size of form fields */
+    margin-bottom: 1.5em; /* More space between fields */
+    padding: 1.5em; /* Increased padding inside fields */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 80%; /* Slightly wider input fields */
+}
+
+/* Submit button */
+.contact-section button {
+    font-size: 1.5em; /* Larger font size for the button */
+    padding: 1.2em 2em; /* Increased padding for a larger button */
+    background: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* Project description */
+.projects-section .project p {
+    font-size: 0.5em !important; /* Force increase in size */
+    margin-bottom: 1.5em; /* More space at the bottom of the description */
+}
+
+
+        .about-section, .projects-section, .contact-section {
+            background: #f3f3f3;
+            text-align: center;
+            padding: 3em 0;
+            font-size: 1.5em;
+              font-size: 1.5em; /* Larger font size */
+    line-height: 1.8; 
+        }
+        /* Style for the project section */
+.projects-section {
+    background: #f3f3f3;
+    text-align: center;
+    padding: 4em 0; /* Increased padding for more space around the projects */
+    font-size: 3.8em; /* Larger font size for project descriptions */
+    line-height: 1.8; /* Increase line height for better readability */
+}
+
+/* Style for individual project */
+.project {
+    display: flex;
+    align-items: center;
+    gap: 2em; /* Increased gap between the image and the description */
+    margin-bottom: 3em; /* More space between each project */
+    justify-content: center; /* Center the content */
+}
+
+/* Style for project images */
+.project img {
+    width: 300px; /* Increase image size */
+    height: 225px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Style for project description */
+.project div {
+    text-align: left;
+}
+
+/* Title of each project */
+.project h3 {
+    font-size: 2em; /* Increase the title size */
+    margin-bottom: 0.5em; /* Space between title and description */
+}
+
+/* Project description */
+.project p {
+    font-size: 5.9em; /* Increase description text size */
+    margin-bottom: 1.5em; /* More space at the bottom of the description */
+}
+
+
+        .project {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            margin-bottom: 2em;
+        }
+
+        .project img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .contact-section form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-section input, 
+        .contact-section textarea {
+            margin-bottom: 1em;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-section button {
+            background: #6a1b9a;
+            color: white;
+            padding: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #6a1b9a;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Floating Lady Animation -->
+    <div class="lady">
+        <img src="images.jpeg" alt="Lady with Laptop" width="150">
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <h2>Hi, I'm Lavudya Amusha</h2>
+            <p>A Passionate Developer</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a B.Tech 3rd-year student in Computer Science at RGUKT Basar. I specialize in creating clean, modern, and responsive websites and applications. I am passionate about web development and constantly exploring new technologies to build useful and innovative solutions.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project">
+                <img src="image1.png" alt="Smart Education Project">
+                <div>
+                    <h3>Smart Education</h3>
+                    <p>This project focuses on peer-to-peer learning. I built a platform where students can interact and share knowledge with one another. Technologies used: HTML, CSS, JavaScript, Bootstrap, PHP, and integration of speech-to-text and voice-to-text APIs.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="image2.png" alt="QueenBeeWorks Project">
+                <div>
+                    <h3>QueenBeeWorks</h3>
+                    <p>This project enables the exchange of products and services among neighbors. Users can connect to share services within their local community. Technologies used: HTML, CSS, JavaScript, React, and MySQL.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Lavudya Amusha. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
